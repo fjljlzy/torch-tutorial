@@ -6,6 +6,7 @@ import logging
 import os
 
 def init_logger(save_dir, log_file, level=logging.DEBUG):
+    # level: DEBUG, INFO, ERROR ...
     # Dir Folder
     abs_dir = os.path.abspath(save_dir)
     if not os.path.exists(abs_dir):
