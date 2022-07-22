@@ -18,7 +18,7 @@ def init_logger(save_dir, log_file, level=logging.DEBUG):
     print(log_local_path)
 
     # init a logger
-    logger = logging.getLogger(log_local_path)
+    logger = logging.getLogger(__name__)
     logger.setLevel(level)
 
     # define a fancy format of each row
