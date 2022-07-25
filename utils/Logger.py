@@ -18,6 +18,7 @@ def init_logger(save_dir, log_file, level=logging.DEBUG):
     print(log_local_path)
 
     # init a logger
+    # logger = logging.getLogger() # root logger and use: logging.info("msg")
     logger = logging.getLogger(__name__)
     logger.setLevel(level)
 
@@ -45,8 +46,8 @@ def init_logger(save_dir, log_file, level=logging.DEBUG):
 if __name__ == '__main__':
     logger = init_logger(
         save_dir='./logs',
-        log_file='test.log'
+        log_file='test.txt'
     )
     logger.info(__file__)
     logger.info(f'1 + 2 = {1 + 2}')
-    
+    logging.info('logging msg')

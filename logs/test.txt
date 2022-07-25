@@ -1,0 +1,9 @@
+[2022-07-25 15:42:54 INFO] c:/Users/tashuangjie/Desktop/Code/torch-tutorial/utils/Logger.py
+[2022-07-25 15:42:54 INFO] 1 + 2 = 3
+[2022-07-25 15:43:25 INFO] c:/Users/tashuangjie/Desktop/Code/torch-tutorial/utils/Logger.py
+[2022-07-25 15:43:25 INFO] 1 + 2 = 3
+[2022-07-25 15:46:15 INFO] c:/Users/tashuangjie/Desktop/Code/torch-tutorial/utils/Logger.py
+[2022-07-25 15:46:15 INFO] 1 + 2 = 3
+[2022-07-25 15:46:15 INFO] logging msg
+[2022-07-25 15:47:44 INFO] c:/Users/tashuangjie/Desktop/Code/torch-tutorial/utils/Logger.py
+[2022-07-25 15:47:44 INFO] 1 + 2 = 3
