@@ -15,10 +15,11 @@ def init_logger(save_dir, log_file, level=logging.DEBUG):
         print('Log Dir Exists.')
     os.makedirs(abs_dir, exist_ok=True)
     log_local_path = os.path.join(abs_dir, log_file)
-    print(log_local_path)
+    print('The log file is:', log_local_path)
 
     # init a logger
     # logger = logging.getLogger() # root logger and use: logging.info("msg")
+    print(f'The name of this logger: {__name__}.')
     logger = logging.getLogger(__name__)
     logger.setLevel(level)
 
@@ -48,6 +49,6 @@ if __name__ == '__main__':
         save_dir='./logs',
         log_file='test.txt'
     )
-    logger.info(__file__)
+    logger.info('Hello logger!')
     logger.info(f'1 + 2 = {1 + 2}')
     logging.info('logging msg')
