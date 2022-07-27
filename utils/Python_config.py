@@ -1,7 +1,7 @@
+from ast import arg
 import sys
 import argparse
 
-from traitlets import default
 
 if __name__ == '__main__':
     print(1)
@@ -10,8 +10,9 @@ if __name__ == '__main__':
     print(type(sys.argv[-1]))
 
     parser = argparse.ArgumentParser()
+    parser.add_argument('--debug', action='store_true') # once --debug appear, begin debug mode
     parser.add_argument('--usr', type=str, default='tom')
     parser.add_argument('--age', type=int, default=18)
     args = parser.parse_args()
-
-    print(args.usr, args.age)
+    if args.debug:
+        print(args.usr, args.age)
